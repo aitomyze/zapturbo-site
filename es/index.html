@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZapTurbo - Automatiza tu WhatsApp</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="language-bar">
+    🌐 <a href="../index.html">Português</a> | <a href="../en/index.html">English</a> | <a href="../es/index.html">Español</a>  
+  </div>
+
+  <header class="hero">
+    <h1>ZapTurbo</h1>
+    <p>Automatiza tu WhatsApp con inteligencia, velocidad y sin complicaciones.</p>
+    <a href="#comprar" class="btn btn-primary">Empieza ahora</a>
+  </header>
+
+  <main class="container">
+    <section class="benefits text-center">
+      <h2>Creado para automatización real</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-unstyled text-start">
+            <li>Script listo en Go + microservicio en Node.js</li>
+            <li>Mensajes automáticos vía WhatsApp Web</li>
+            <li>Disparadores basados en archivos CSV o comandos</li>
+            <li>Documentación completa en portugués, inglés y español</li>
+            <li>Bono: módulo Pix Lite (confirmación de pagos)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta p-5 mt-5" id="comprar">
+      <h2>Oferta especial de lanzamiento</h2>
+      <p><span class="old-price">$39</span> <span class="price">$19</span></p>
+      <p>Disponible solo para los primeros 50 usuarios con soporte directo incluido.</p>
+      <a href="https://wa.me/5519992627785?text=Quiero%20comprar%20ZapTurbo" class="btn btn-primary">Comprar ahora</a>
+      <p class="mt-3"><small><a href="../assets/Apresentação ZapTurbo.pdf" target="_blank">Ver presentación completa en PDF</a></small></p>
+    </section>
+
+    <section class="use-cases text-center">
+      <h2>¿Qué puedes automatizar con ZapTurbo?</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="use-case-card p-4">
+            <div class="fs-2 mb-2">🛍️</div>
+            <h3 class="fs-5 fw-bold">Recuperar carritos abandonados</h3>
+            <p>Envía mensajes automáticos a quienes no completaron la compra, incluyendo enlace de pago por Pix.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="use-case-card p-4">
+            <div class="fs-2 mb-2">💸</div>
+            <h3 class="fs-5 fw-bold">Cobros recurrentes vía WhatsApp + Pix</h3>
+            <p>Genera solicitudes de pago Pix mensuales y envíalas automáticamente a tus suscriptores.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="use-case-card p-4">
+            <div class="fs-2 mb-2">🚀</div>
+            <h3 class="fs-5 fw-bold">Campañas promocionales segmentadas</h3>
+            <p>Envía promociones vía WhatsApp a listas segmentadas con enlaces inteligentes.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="use-case-card p-4">
+            <div class="fs-2 mb-2">📈</div>
+            <h3 class="fs-5 fw-bold">Mensajes de bienvenida y onboarding</h3>
+            <p>Responde al primer contacto con una secuencia automatizada de presentación.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="use-case-card p-4">
+            <div class="fs-2 mb-2">📲</div>
+            <h3 class="fs-5 fw-bold">Integración con formularios o landing pages</h3>
+            <p>Envía mensajes automáticos tras captar un lead, con enlace de pago vía Pix.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta p-5 mt-5">
+      <a href="https://wa.me/5519992627785?text=Quiero%20comprar%20ZapTurbo" class="btn btn-primary">
+        Empezar ahora
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>⚠️ Este producto utiliza una librería no oficial de WhatsApp Web. <a data-bs-toggle="modal" data-bs-target="#disclaimerModal">Ver descargo</a>.</p>
+    <p>© 2024 <a href="https://aitomyze.com" target="_blank">Aitomyze</a>. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="disclaimerLabel">Descargo - ZapTurbo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-start" style="font-size: 0.95rem; line-height: 1.6;">
+          <p>Este proyecto utiliza la biblioteca <strong>no oficial</strong> <code>whatsapp-web.js</code> para automatizar WhatsApp Web mediante Puppeteer.</p>
+          <p><strong>Advertencias importantes:</strong></p>
+          <ul>
+            <li>Este proyecto <strong>no está afiliado con WhatsApp Inc.</strong></li>
+            <li>Depende de la interfaz pública de WhatsApp Web, la cual puede cambiar en cualquier momento.</li>
+            <li>Existe un <strong>riesgo de bloqueo temporal o permanente</strong> del número utilizado.</li>
+          </ul>
+          <p><strong>Cómo reducir el riesgo:</strong></p>
+          <ul>
+            <li>Usa un número dedicado, no tu WhatsApp personal</li>
+            <li>Evita spam o altos volúmenes de mensajes</li>
+            <li>Simula comportamiento humano (pausas, mensajes variados)</li>
+          </ul>
+          <p>Para uso comercial, considera usar la <a href="https://www.whatsapp.com/business/api" target="_blank">API oficial de WhatsApp Business</a>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
